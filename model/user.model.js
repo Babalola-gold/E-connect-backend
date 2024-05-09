@@ -5,6 +5,7 @@ require('dotenv').config();
 const uri = process.env.URI
 
 mongoose.connect(uri)
+
     .then((response) => {
         console.log("database has connected successful")
     })
@@ -13,6 +14,7 @@ mongoose.connect(uri)
         console.log("There is an error in the database")
     })
 let userSchema = new mongoose.Schema({
+
     firstName: String,
     lastName: String,
     email: { type: String, required: true, unique: true },

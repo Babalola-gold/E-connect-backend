@@ -11,6 +11,7 @@ dotenv.config()
 const app = express()
 app.use(cors())
 const homeProducts = [
+    
     {
         id: 1, name: 'Freezer', price: '50,000', image: '../src/assets/rectangle 1.png'
     },
