@@ -1,4 +1,5 @@
 const { JsonWebTokenError } = require('jsonwebtoken');
+const bcrypt = require("bcrypt")
 const jwt = require('jsonwebtoken');
 const User = require('../model/user.model');
 
