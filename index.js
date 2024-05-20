@@ -1,6 +1,5 @@
 const express = require("express")
 const App = express()
-
 const cors = require("cors")
 const dotenv = require("dotenv")
 const userRouter = require("./routes/user.route")
@@ -10,19 +9,19 @@ dotenv.config()
 
 const app = express()
 app.use(cors())
-const homeProducts = [
+// const homeProducts = [
     
-    {
-        id: 1, name: 'Freezer', price: '50,000', image: '../src/assets/rectangle 1.png'
-    },
-    {
-        id: 2, name: 'Cook Ware', price: '50,000', image: '../src/assets/Rectangle (2).png'
-    },
-    {
-        id: 3, name: 'Micro Wave', price: '50,000', image: '../src/assets/Rectangle 1 (3).png'
-    },
+//     {
+//         id: 1, name: 'Freezer', price: '50,000', image: '../src/assets/rectangle 1.png'
+//     },
+//     {
+//         id: 2, name: 'Cook Ware', price: '50,000', image: '../src/assets/Rectangle (2).png'
+//     },
+//     {
+//         id: 3, name: 'Micro Wave', price: '50,000', image: '../src/assets/Rectangle 1 (3).png'
+//     },
    
-]
+// ]
 
 app.get("/products", (req, res) => {
     res.send(homeProducts);
